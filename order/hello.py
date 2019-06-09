@@ -13,20 +13,20 @@ app=Flask(__name__)
 app.register_blueprint(route_imooc,url_prefix = "/imooc")
 
 
-# @app.route('/')
-# def hello_world():
-#     return '这是 /  页面'
-#
-#
-#
-# @app.route('/api')
-# def index():
-#     return 'this is api page'
-#
-#
-# @app.route('/api/hello')
-# def api():
-#     return 'this is  api/hello page'
+@app.route('/')
+def hello_world():
+    return '这是 /  页面'
+
+
+
+@app.route('/api')
+def index():
+    return 'this is api page'
+
+
+@app.route('/api/hello')
+def api():
+    return 'this is  api/hello page'
 
 
 
